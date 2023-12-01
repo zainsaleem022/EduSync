@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="870.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="410.0" layoutY="59.0" text="Join Class" />
+      <Label layoutX="345.0" layoutY="149.0" text="Class ID" />
+      <Label fx:id="classJoinedSuccessfully" layoutX="422.0" layoutY="223.0" textFill="RED" />
+      <Button layoutX="409.0" layoutY="267.0" mnemonicParsing="false" onAction="#student_join_class" text="Submit" />
+      <Button layoutX="397.0" layoutY="336.0" mnemonicParsing="false" onAction="#show_student_main_menu" text="Main Menu" />
+      <TextField fx:id="classIdField" layoutX="422.0" layoutY="145.0" />
+   </children>
+</AnchorPane>

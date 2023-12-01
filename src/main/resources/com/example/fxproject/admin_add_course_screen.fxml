@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="496.0" prefWidth="758.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="admin_add_course_screen" layoutX="341.0" layoutY="53.0" text="Add Course" />
+      <Label layoutX="242.0" layoutY="132.0" text="Course Name" />
+      <Label layoutX="228.0" layoutY="200.0" text="Course Description" />
+      <Button onAction="#admin_add_course" layoutX="346.0" layoutY="343.0" mnemonicParsing="false" text="Submit" />
+      <Button onAction="#show_admin_menu_screen" layoutX="334.0" layoutY="401.0" mnemonicParsing="false" text="Main Menu" />
+      <TextField fx:id="courseNameField" layoutX="379.0" layoutY="128.0" />
+      <TextArea fx:id="descriptionArea" layoutX="367.0" layoutY="189.0" prefHeight="115.0" prefWidth="289.0" />
+      <Label fx:id="messageLabel1" layoutX="450.0" layoutY="360.0" textFill="RED" />
+   </children>
+</AnchorPane>

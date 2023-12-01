@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label layoutX="258.0" layoutY="28.0" text="Your Classes" />
+        <ListView fx:id="classListView" layoutX="100.0" layoutY="71.0" prefHeight="200.0" prefWidth="400.0" />
+        <Button layoutX="500.0" layoutY="347.0" mnemonicParsing="false" onAction="#show_teacher_menu_screen" text="Main Menu" />
+      <Button layoutX="394.0" layoutY="347.0" mnemonicParsing="false" onAction="#teacher_remove_class" text="Remove Class" />
+      <Button layoutX="132.0" layoutY="347.0" mnemonicParsing="false" onAction="#show_teacher_add_assignment_screen" text="Create Assignment" />
+      <Button onAction="#show_teacher_add_announcement_screen" layoutX="258.0" layoutY="347.0" mnemonicParsing="false" text="Add Announcement" />
+      <Button layoutX="39.0" layoutY="347.0" mnemonicParsing="false" text="Open Class" />
+      <Label fx:id="teacherRemovedClassSuccessfully" layoutX="277.0" layoutY="289.0" textFill="RED" />
+    </children>
+</AnchorPane>

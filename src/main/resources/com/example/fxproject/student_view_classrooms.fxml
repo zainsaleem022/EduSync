@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label layoutX="258.0" layoutY="28.0" text="Your Classes" />
+        <!-- <ListView fx:id="classListView" layoutX="100.0" layoutY="56.0" prefHeight="200.0" prefWidth="400.0" /> -->
+        
+        <ListView fx:id="classListView" layoutX="100.0" layoutY="56.0" orientation="HORIZONTAL" prefHeight="200.0" prefWidth="400.0">
+	    	<items>
+	        	<FXCollections fx:factory="observableArrayList">
+	            	<!-- Dummy Data -->
+	            	<String fx:value="ClassID 123. &#10;Course: Math. &#10;Teacher: John Doe. &#10;Description: ABC" />
+	            	<String fx:value="ClassID 456. &#10;Course: English. &#10;Teacher: Jane Smith. &#10;Description: XYZ" />
+	            	<!-- Add more dummy data as needed -->
+	        	</FXCollections>
+	    	</items>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.3684210479259491" green="0.3138401508331299" blue="0.3138401508331299" />
+               </color>
+            </DropShadow>
+         </effect>
+		</ListView>
+        
+        <Button layoutX="266.0" layoutY="353.0" mnemonicParsing="false" onAction="#show_student_main_menu" text="Main Menu" />
+      <Button layoutX="227.0" layoutY="317.0" mnemonicParsing="false" onAction="#student_unenroll_class" text="Unenroll" />
+      <Label fx:id="studentUnenrolledClassSuccessfully" layoutX="304.0" layoutY="282.0" textFill="RED" />
+      <Button layoutX="318.0" layoutY="317.0" mnemonicParsing="false" text="Open Class" />
+    </children>
+</AnchorPane>
